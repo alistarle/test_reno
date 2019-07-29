@@ -1,0 +1,24 @@
+=============
+Release Notes
+=============
+
+.. _Release Notes_v0.1:
+
+v0.1
+====
+
+.. _Release Notes_v0.1_New Features:
+
+New Features
+------------
+
+- First version of the product
+
+
+.. _Release Notes_v0.1_Known Issues:
+
+Known Issues
+------------
+
+- Nothing are working anymore !
+

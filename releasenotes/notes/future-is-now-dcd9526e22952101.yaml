@@ -1,0 +1,17 @@
+---
+prelude: >
+    This version is a revolution
+features:
+  - |
+    Ability to generate release notes
+  - |
+    Ability to launch it from command line
+upgrade:
+  - |
+    You need to beware of upgrade
+deprecations:
+  - |
+    v0.1 sucks
+fixes:
+  - |
+    Everything is working again
