@@ -2,6 +2,53 @@
 Release Notes
 =============
 
+.. _Release Notes_v0.2:
+
+v0.2
+====
+
+.. _Release Notes_v0.2_Prelude:
+
+Prelude
+-------
+
+This version is a revolution
+
+
+.. _Release Notes_v0.2_New Features:
+
+New Features
+------------
+
+- Ability to generate release notes
+
+- Ability to launch it from command line
+
+
+.. _Release Notes_v0.2_Upgrade Notes:
+
+Upgrade Notes
+-------------
+
+- You need to beware of upgrade
+
+
+.. _Release Notes_v0.2_Deprecation Notes:
+
+Deprecation Notes
+-----------------
+
+- v0.1 sucks
+
+
+.. _Release Notes_v0.2_Bug Fixes:
+
+Bug Fixes
+---------
+
+- Everything is working again
+
+
 .. _Release Notes_v0.1:
 
 v0.1
