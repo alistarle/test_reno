@@ -1,2 +1,5 @@
 flask
 gunicorn
+hvac
+dynaconf
+dynaconf[vault]
