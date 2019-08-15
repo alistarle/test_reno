@@ -3,3 +3,5 @@ gunicorn
 hvac
 dynaconf
 dynaconf[vault]
+Flask-Opentracing
+jaeger_client

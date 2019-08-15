@@ -1,6 +1,10 @@
 import os
+import opentracing
 
 from flask import Flask
+from flask_opentracing import FlaskTracing
+from jaeger_client import Config
+
 from dynaconf import FlaskDynaconf
 
 def generate_vault_path():
@@ -13,6 +17,14 @@ app = Flask(__name__)
 FlaskDynaconf(app,
               VAULT_PATH_FOR_DYNACONF=generate_vault_path())
 
+# Create configuration object with enabled logging and sampling of all requests.
+config = Config(config={'sampler': {'type': 'const', 'param': 1},
+                        'logging': True,
+                        'local_agent': {'reporting_host': 'localhost'}
+                        },
+                service_name=os.environ.get('FLASK_APP_NAME', 'flask_app'))
+opentracing_tracer = config.initialize_tracer()
+tracing = FlaskTracing(opentracing_tracer, True, app, [])
 
 @app.route("/")
 def hello():
